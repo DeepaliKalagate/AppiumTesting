@@ -1,5 +1,3 @@
 build/
 gradle/
 .gradle/
-settings.gradle/
-gradlew/
