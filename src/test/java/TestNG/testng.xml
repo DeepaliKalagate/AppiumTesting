@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="AppiumTesting">
+        <classes>
+            <class name="com.thoughtworks.script.AddTaskTest">
+                <methods>
+                    <parameter name="udid" value="emulator-5554"></parameter>
+                    <include name="addToDoTask"/>
+                </methods>
+            </class>
+            <class name="com.thoughtworks.script.ScheduleDisplayPageTest">
+                <methods>
+                    <parameter name="udid" value="emulator-5556"></parameter>
+                    <include name="scheduledDisplayTest"/>
+                </methods>
+            </class>
+            <class name="com.thoughtworks.script.CompletedTaskTest">
+                <methods>
+                    <parameter name="udid" value="emulator-5554"></parameter>
+                    <include name="completedTaskTest"/>
+                </methods>
+            </class>
+            <class name="com.thoughtworks.script.UpdateTaskTest">
+                <methods>
+                    <parameter name="udid" value="emulator-5556"></parameter>
+                    <include name="updateTaskInToDo"/>
+                </methods>
+            </class>
+             <class name="com.thoughtworks.script.SettingPageTest">
+                 <methods>
+                     <parameter name="udid" value="emulator-5554"></parameter>
+                     <include name="changeSettingOfApp"/>
+                 </methods>
+             </class>
+            <class name="com.thoughtworks.script.MoveToTrashPageTest">
+                <methods>
+                    <parameter name="udid" value="emulator-5556"></parameter>
+                    <include name="moveTaskToTrash"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
